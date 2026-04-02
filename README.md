@@ -9,7 +9,11 @@ A complete end-to-end Machine Learning Operations (MLOps) pipeline for fruit ima
 https://drive.google.com/drive/folders/1sp2n5U4oPuaTQPiy73IcZJZ6g3bcUdii
 ---
 
+## Live Application
 
+**Application URL:** `http://localhost:5000` (Local deployment)
+
+---
 
 ## Project Description
 
@@ -77,7 +81,7 @@ The model classifies the following fruits:
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/dmahe09/Summative-MLOP.git 
+git clone https://github.com/ThierrySHYAKA/Summative-MLOP.git
 cd Fruit_Classifier
 ```
 
@@ -130,12 +134,20 @@ Run all cells to train and save the model.
 python -m src.api
 ```
 
+The API will start on `http://localhost:5000`
+
+### Step 6: Access the Dashboard
+Open your browser and navigate to:
+```
+http://localhost:5000
+```
+
 ---
 
 ## Usage Guide
 
 ### Making Predictions
-1. Open the dashboard 
+1. Open the dashboard at `http://localhost:5000`
 2. Drag and drop an image or click to upload
 3. View prediction results with confidence scores
 4. Latency is displayed for each prediction
@@ -176,6 +188,12 @@ python -m src.api
 ```bash
 # Start the API first
 python -m src.api
+
+# In another terminal, run Locust
+locust -f locustfile.py --host=http://localhost:5000
+
+# Open browser to http://localhost:8089
+# Configure: 100 users, spawn rate 10, run for 15 minutes
 ```
 
 ### Sample Locust Output
@@ -440,7 +458,6 @@ pip install -r requirements.txt
 **Solution:** Ensure `index.html` is in `src/templates/` folder
 
 ---
-
 ## Author
 
 **MAHE Digne**
