@@ -81,7 +81,7 @@ The model classifies the following fruits:
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/ThierrySHYAKA/Summative-MLOP.git
+git clone (https://github.com/dmahe09/Summative-MLOP.git)
 cd Fruit_Classifier
 ```
 
