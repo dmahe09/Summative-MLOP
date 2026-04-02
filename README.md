@@ -6,15 +6,10 @@ A complete end-to-end Machine Learning Operations (MLOps) pipeline for fruit ima
 
 ## Video Demonstration
 
-**YOUTUBE LINK** 
-
+https://drive.google.com/drive/folders/1sp2n5U4oPuaTQPiy73IcZJZ6g3bcUdii
 ---
 
-## Live Application
 
-**Application URL:** 
-
----
 
 ## Project Description
 
